@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<title>Task 9</title>
+<html>
+
+<body>
+
+    <h2>Return a Boolean</h2>
+
+    <p>Boolean:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        function findBoolean(n) {
+            let arr = [];
+            let j = 0;
+            for (let i = 0; i <= n; i++) {
+                if (i % 2 == 0)
+                    arr[j++] = i;
+            }
+            return arr;
+        }
+        var inputNumber = prompt("Please type a number and then press OK to find even numbers from 0 to");
+        document.getElementById("demo").innerHTML = findEvenNumbers(inputNumber);
+    </script>
+
+</body>
+
+</html>

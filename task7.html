@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<title>Task 7</title>
+<html>
+
+<body>
+
+    <h2>Remove Negative Number from an Array</h2>
+
+    <p>The new array is:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        function removeNegNum(arr){
+            let size = arr.length;
+            let arr1=[];
+            let j = 0;
+            for(let i = 0; i < size; i++){
+                if(arr[i] > 0)
+                arr1[j++] = arr[i]
+            }
+            return arr1;
+        }
+
+        let arr2 = [1,2,-3,4,5];
+
+        document.getElementById("demo").innerHTML = removeNegNum(arr2);
+    </script>
+
+</body>
+
+</html>

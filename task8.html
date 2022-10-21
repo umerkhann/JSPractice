@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<title>Task 8</title>
+<html>
+
+<body>
+
+    <h2>Remove spaces from a string</h2>
+
+    <p>The new string is:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        function removeSpaces(string){
+            let size = string.length;
+            let string1 = "";
+            let j = 0;
+            for(let i = 0; i < size; i++){
+                if(string[i] != " ")
+                string1[j++] = string[i]
+            }
+            return string1;
+        }
+
+        let string3 = "Hello world !";
+
+        document.getElementById("demo").innerHTML = removeSpaces(string3);
+    </script>
+
+</body>
+
+</html>

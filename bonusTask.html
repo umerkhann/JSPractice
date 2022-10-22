@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<title>Bonus Task</title>
+<html>
+
+<body>
+
+    <h2>Find a Prime Number</h2>
+
+    <p></p>
+
+    <p id="demo"></p>
+
+    <script>
+        function findPrime(n){
+    if ( n == 1 || n ==2 || n == 3 )
+        return (n + " is a prime number.");
+    let count = 0;
+    for (let i = 2; i < n; i++){
+        if (n % i == 0)
+            count++;
+    }
+    if (count == 0)
+        return (n + " is a prime number.");
+    return (n + " is not a prime number,");
+}
+        var inputNumber = prompt("Please type a number and then press OK to find if it is prime");
+        document.getElementById("demo").innerHTML = findPrime(inputNumber);
+    </script>
+
+</body>
+
+</html>

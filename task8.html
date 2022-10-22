@@ -14,10 +14,9 @@
         function removeSpaces(string){
             let size = string.length;
             let string1 = "";
-            let j = 0;
             for(let i = 0; i < size; i++){
-                if(string[i] != " ")
-                string1[j++] = string[i]
+                if(string[i] != ' ')
+                string1 += string[i]
             }
             return string1;
         }

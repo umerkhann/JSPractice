@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<title>Task 10</title>
+<html>
+
+<body>
+
+    <h2>Return the number of vowels in a string</h2>
+
+    <p>The number of vowel word(s) is/are:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        function findVowels(str) {
+            let size = str.length;
+            let count = 0;
+            for (let i = 0; i < size; i++) {
+                if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
+                    count++;
+                // switch (str[i]) {
+                //     case 'a':
+                //         count++;
+                //         break;
+                //     case 'e':
+                //         count++;
+                //         break;
+                //     case 'i':
+                //         count++;
+                //         break;
+                //     case 'o':
+                //         count++;
+                //         break;
+                //     case 'u':
+                //         count++;
+                //         break;
+                // }
+            }
+            return count;
+        }
+
+
+        var inputString = prompt("Please type a string/word and then press OK to find the number of vowels");
+        document.getElementById("demo").innerHTML = findVowels(inputString);
+    </script>
+    </script>
+
+</body>
+
+</html>
